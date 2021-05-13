@@ -36,11 +36,7 @@ class student:
         
         connection=mysql.connector.connect(host="localhost",user="root",password="",database="learning")
         cursor=connection.cursor()
-        # query1="insert into Student(Std_ID,Name,Dept,Sub1,Sub2,\
-        #         Sub3,Sub4,Sub5,Total,Average,Grade)\
-        #         values({},{},{},{},{},{},{},{},{},{},{})".format(ID,name_1,Dept,Sub1,Sub2,\
-        #                                                                              Sub3,Sub4,Sub5,self.total,self.avg,self.grade)
-        
+       
         query="insert into Student(Std_ID,Name,Dept,Sub1,Sub2,\
                 Sub3,Sub4,Sub5,Total,Average,Grade)\
                 values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
