@@ -34,7 +34,6 @@ class student:
         self.avg=self.get_avg(self.total)
         self.grade=self.get_grade(self.avg)
         
-        print('%d','%s','%s','%f','%f','%f','%f','%f','%f','%f','%s',ID,name_1,Dept,Sub1,Sub2,Sub3,Sub4,Sub5,self.total,self.avg,self.grade)
         connection=mysql.connector.connect(host="localhost",user="root",password="",database="learning")
         cursor=connection.cursor()
         # query1="insert into Student(Std_ID,Name,Dept,Sub1,Sub2,\
